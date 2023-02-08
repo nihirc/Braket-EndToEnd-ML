@@ -125,8 +125,6 @@ def main():
         return [qml.expval(qml.PauliZ(wires=i)) for i in range(n_qubits)]
 
     X_train, y_train, X_test, y_test = get_data(data_dir)
-    X_train = X_train[1:100]
-    y_train = y_train[1:100]
     logger.info(X_train.shape)
     logger.info(y_train.shape)
     
